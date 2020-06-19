@@ -1,0 +1,84 @@
+.App {
+  background-color: #282c34;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.simon-says {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .controls {
+    position: absolute;
+    z-index: 999;
+    padding: 16px;
+    border-radius: 80%;
+    background-color: #000000;
+    height: 128px;
+    width: 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:active {
+      background-color: #282c34;
+    }
+  }
+
+  .button {
+    padding: 64px !important;
+    margin: 2px !important;
+    width: 300px;
+    height: 300px;
+  }
+
+  .buttons {
+    margin-bottom: 0 !important;
+  }
+
+  .title {
+    color: #fff;
+    font-size: 5em;
+    text-align: center;
+  }
+
+  .is-blue {
+    border-bottom-right-radius: 50%;
+
+    background-color: #0000ff;
+    border-color: #0000ff;
+    &.flash {
+      background-color: #add8e6;
+    }
+  }
+
+  .is-red {
+    border-top-right-radius: 50%;
+    background-color: #ff0000;
+    border-color: #ff0000;
+    &.flash {
+      background-color: #ffcccb;
+    }
+  }
+
+  .is-green {
+    border-top-left-radius: 50%;
+    background-color: #008900;
+    border-color: #008900;
+    &.flash {
+      background-color: #90ee90;
+    }
+  }
+
+  .is-yellow {
+    border-bottom-left-radius: 50%;
+    background-color: #ff8c00;
+    border-color: #ff8c00;
+    &.flash {
+      background-color: #fce883;
+    }
+  }
+}
